@@ -36,8 +36,8 @@ def get_occurrences(ptn, txt):
     q=17
     i,j,p,t,h=0,0,0,0,1
 
-    #for i in range(ptns-1):
-     #   h = (h*d) % q
+    for i in range(ptns-1):
+        h = (h*d) % q
 
     for i in range(ptns):
         p = (d*p + ord(ptn[i])) % q
@@ -57,7 +57,7 @@ def get_occurrences(ptn, txt):
             if t < 0:
                 t = t+q
     # and return an iterable variable
-    return outputs
+    return [outputs]
 
 
 # this part launches the functions

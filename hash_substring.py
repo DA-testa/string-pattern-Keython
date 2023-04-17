@@ -29,6 +29,7 @@ def print_occurrences(output):
 
 def get_occurrences(ptn, txt):
     # this function should find the occurances using Rabin Karp alghoritm 
+    outputs=""
     ptns=len(ptn)
     txts=len(txt)
     d=256
@@ -50,7 +51,7 @@ def get_occurrences(ptn, txt):
                 else:
                     j += 1
             if j == ptns:
-                outputs=str(i)+" "
+                outputs=outputs+str(i)+" "
         if i < txts-ptns:
             t = (d*(t-ord(txt[i])*h) + ord(txt[i+ptns])) % q
             if t < 0:

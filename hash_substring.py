@@ -9,7 +9,7 @@ def read_input():
         ptn = input()
         txt = input()
     elif "F" in choice:
-        with open ("./tests/06", mode = "r") as f:
+        with open ("./tests/06", 'r') as f:
             ptn = f.readline()
             txt = f.readline()
     

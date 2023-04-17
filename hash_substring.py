@@ -33,7 +33,7 @@ def get_occurrences(ptn, txt):
     ptns=len(ptn)
     txts=len(txt)
     d=256
-    q=53
+    q=17
     i,j,p,t,h=0,0,0,0,1
 
     for i in range(ptns-1):
